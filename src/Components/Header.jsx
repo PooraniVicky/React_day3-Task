@@ -1,18 +1,22 @@
 import React from 'react';
-
 const Header = () => {
     return (
-        <div>
-            <header className="bg-dark py-5" id='Header'>
-                <div className="container px-4 px-lg-5 my-5">
-                    <div className="text-center text-white">
-                        <h1 className="display-4 fw-bolder">Shop in style</h1>
-                        <p className="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
-                    </div>
-                </div>
-            </header>
-
-        </div>
+        <header
+            className="py-5 text-center text-dark"
+            style={{
+                backgroundImage: `url('https://i.pinimg.com/originals/23/0a/c0/230ac0efc96f59ee054d060452ec2503.jpg')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+            }}
+        >
+            <div className="container px-4 px-lg-5 my-5">
+                <h1 className="display-4 fw-bolder pacifico-regular">Trendy Boutique</h1>
+                <p className="lead fw-normal mb-0 asap" style={{color: 'black'}}>
+                    Discover the latest fashion trends and timeless elegance at our trendy boutique, where style meets sophistication.
+                </p>
+            </div>
+        </header>
     );
 };
 

@@ -3,7 +3,7 @@ import ConditionalRendering from './Components/ConditionalRendering';
 import Navbar from './Components/Navbar';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-
+import './App.css'
 
 const App = () => {
   const [status, setStatus] = useState(true)
@@ -64,7 +64,7 @@ const App = () => {
   const [products, setProducts]=useState(data)
   
   return (
-    <div>
+    <div style={{ backgroundColor: 'antiquewhite'}}> 
     <Navbar cartCount={cartCount} setCartCount={setCartCount}/>
     <Header />
     {status? <ConditionalRendering setCartCount={setCartCount} cartCount={cartCount} setProducts={setProducts} products={products} />: ''} 
